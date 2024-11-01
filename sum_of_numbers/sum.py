@@ -1,13 +1,15 @@
 def main():
-    print(get_sum(-2, 3))
+    print(get_sum(3, 3))
 
 
 def get_sum(a,b):
-    # return sum(range(a, b+1))
-    nums_list = []
+    numbers_list = []
     for i in range(a, b+1):
-        nums_list.append(i)
-    return sum(nums_list)
+        numbers_list.append(i)
+    if b == a:
+        return a
+    else:
+        return sum(numbers_list)
 
 
 if __name__ == '__main__':
