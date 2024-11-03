@@ -1,12 +1,16 @@
 def main():
-    print(solution('identiFier'))
+    print(solution('breakCamel  Case'))
 
 
 def solution(s):
-    for i in s:
+    new_str = s.replace(' ', '')
+    result = []
+    for i in new_str:
         if i == i.upper():
-            s = s.replace(i.upper(), f' {i}')
-    return s.strip()
+            result.append(' ')
+        result.append(i)
+    return ''.join(result).strip()
+
 
 
 if __name__ == '__main__':
