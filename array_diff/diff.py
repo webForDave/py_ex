@@ -3,8 +3,7 @@ def main():
 
 
 def array_diff(a, b):
-    new_list = [i for i in a if i not in b]
-    return new_list
+    return [i for i in a if i not in b]
 
 if __name__ == '__main__':
     main()
