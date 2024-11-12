@@ -3,10 +3,7 @@ def main():
 
 
 def friend(x):
-    friends = []
-    for friend in x:
-        if len(friend) == 4:
-            friends.append(friend)
+    friends = [friend for friend in x if len(friend) == 4]
     return friends
 
 
